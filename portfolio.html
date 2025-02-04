@@ -1,112 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baye Cheikh FALL</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baye Cheikh FALL</title>
+  <!-- Lien vers le fichier CSS externe -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav aria-label="Main navigation">
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+      <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <header id="home" class="hero">
-            <h1>Creative Developer</h1>
-            <video autoplay muted loop class="bg-video">
-                <source src="https://www.youtube.com/shorts/iQBFeZFPoI4?feature=share" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-        </header>
+  <main>
+      <!-- Hero Section -->
+      <header id="home" class="hero">
+          <h1>Creative Developer</h1>
+          <video autoplay muted loop class="bg-video">
+              <source src="https://www.youtube.com/shorts/iQBFeZFPoI4?feature=share" type="video/mp4">
+              Your browser does not support HTML5 video.
+          </video>
+      </header>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <article>
-                <p>Passionate developer with 5+ years experience creating digital solutions...</p>
-                <audio controls>
-                    <source src="welcome-message.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+      <!-- About Section -->
+      <section id="about" class="section">
+          <h2>About Me</h2>
+          <article>
+              <p>Passionate developer with 5+ years experience creating digital solutions...</p>
+              <audio controls>
+                  <source src="welcome-message.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+          </article>
+      </section>
+
+      <!-- Work Section -->
+      <section id="work" class="section">
+          <h2>My Work</h2>
+          <div class="projects">
+              <article>
+                  <h3>E-Commerce Platform</h3>
+                  <p>React-based shopping solution</p>
+              </article>
+              <article>
+                <h3>Mobile App </h3>
+                <p>Mobile Banking application</p>
             </article>
-        </section>
+              <article>
+                  <h3>AI Developer</h3>
+                  <p>Natural language processing application</p>
+              </article>
+          </div>
+      </section>
 
-        <!-- Work Section -->
-        <section id="work" class="section">
-            <h2>My Work</h2>
-            <div class="projects">
-                <article>
-                    <h3>E-Commerce Platform</h3>
-                    <p>React-based shopping solution</p>
-                </article>
-                <article>
-                    <h3>AI Chatbot</h3>
-                    <p>Natural language processing application</p>
-                </article>
-            </div>
-        </section>
+      <!-- Resume Section -->
+      <section id="resume" class="section">
+          <h2>Experience</h2>
+          <table class="timeline">
+              <thead>
+                  <tr>
+                      <th>Year</th>
+                      <th>Position</th>
+                      <th>Company</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>2023-Now</td>
+                      <td>full stack Developer</td>
+                      <td>Finetech Groupe Corp</td>
+                  </tr>
+                  <tr>
+                      <td>2018-2020</td>
+                      <td>Junior Developer</td>
+                      <td>United ventures</td>
+                  </tr>
+              </tbody>
+          </table>
+      </section>
 
-        <!-- Resume Section -->
-        <section id="resume" class="section">
-            <h2>Experience</h2>
-            <table class="timeline">
-                <thead>
-                    <tr>
-                        <th>Year</th>
-                        <th>Position</th>
-                        <th>Company</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2020-Now</td>
-                        <td>Lead Developer</td>
-                        <td>Tech Corp</td>
-                    </tr>
-                    <tr>
-                        <td>2018-2020</td>
-                        <td>Junior Developer</td>
-                        <td>Web Solutions</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <!-- Contact Form -->
+      <section id="contact" class="section">
+          <h2>Get in Touch</h2>
+          <form class="contact-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <button type="submit">Send Message</button>
+          </form>
+      </section>
+  </main>
 
-        <!-- Contact Form -->
-        <section id="contact" class="section">
-            <h2>Get in Touch</h2>
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <p>&copy; 2025 Baye Cheikh FALL. All rights reserved.</p>
-        <nav aria-label="Social media links">
-            <ul class="social-links">
-                <li><a href="#linkedin">LinkedIn</a></li>
-                <li><a href="#github">GitHub</a></li>
-            </ul>
-        </nav>
-    </footer>
+  <!-- Footer -->
+  <footer class="main-footer">
+      <p>&copy; 2025 Baye Cheikh FALL. All rights reserved.</p>
+      <nav aria-label="Social media links">
+          <ul class="social-links">
+              <li><a href="https://www.linkedin.com/in/baye-cheikh-fall/">LinkedIn</a></li>
+              <li><a href="https://github.com/baye94">GitHub</a></li>
+          </ul>
+      </nav>
+  </footer>
 </body>
 </html>
